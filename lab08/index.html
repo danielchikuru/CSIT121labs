@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Exploring Form Elements</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Text Input</h2>
+        <p>Text inputs are used to collect short pieces of textual information, such as names, email addresses, or search queries.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" placeholder="Search...">
+        </form>
+    </section>
+
+    <section>
+        <h2>Text Area</h2>
+        <p>Text area elements allow users to input longer blocks of text, such as comments, messages, or reviews.</p>
+        <form>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </form>
+    </section>
+
+    <section>
+        <h2>Checkbox</h2>
+        <p>Checkboxes are used when users need to select one or more options from a list of choices.</p>
+        <form>
+            <input type="checkbox" id="option1" name="option1" value="option1">
+            <label for="option1">Option 1</label><br>
+            <input type="checkbox" id="option2" name="option2" value="option2">
+            <label for="option2">Option 2</label><br>
+            <input type="checkbox" id="option3" name="option3" value="option3">
+            <label for="option3">Option 3</label><br>
+        </form>
+    </section>
+
+    <section>
+        <h2>Radio Buttons</h2>
+        <p>Radio buttons are used when users need to select only one option from a list of choices.</p>
+        <form>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+        </form>
+    </section>
+
+    <section>
+        <h2>Select Dropdown</h2>
+        <p>Select dropdowns allow users to select one option from a dropdown menu.</p>
+        <form>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Form Elements. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
